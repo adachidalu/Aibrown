@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AiBrown - Cart</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+        
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+    
+                <div class="logo">
+                    <h2>AiBrown</h2>
+                  </div>
+                <div class="nav-items">
+                    <a href="#search"><img src="search.png" alt="search" width="30px" height="30px"></a>
+                    <a href="cartpage.html"><img src="cart.png" alt="cart" width="30px" height="30px"></a>
+                    <a href="#"><img src="account.png" alt="account" width="30px" height="30px"></a>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div class="main">
+            <div class="cartheading">
+                <h1>Cart</h1>
+                <p>Shop for $34 more to enjoy <b>FREE Shipping!!!</b></p>
+            </div>
+            <div class="cartbody">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="img">
+                                <img src="exclusive.png">
+                            </div>
+                            <div class="data">
+                                <h4>AirBags Sneakers</h4>
+                                <p>Puma</p>
+                                <span><b>Remove</b></span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="quantity">
+                                <span onclick="minus()">&#8722;</span>
+                                <span class="number">1</span>
+                                <span onclick="plus()">&#43;</span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <span class="price">$80.00</span>
+                        </td>
+                        <td>
+                            <span class="subtotal">$80.00</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="cartfooter">
+                <form action="#">
+                    <h2>Cart Summary</h2>
+                    <div class="inputs">
+                        <span><input type="radio" name="shipping" id="free" checked>$0.00</span>
+                        <span><input type="radio" name="shipping" id="express">+$15.00</span>
+                    </div>
+                    <div class="sum">
+                        <span class="subtotal">
+                            <p>Subtotal</p><p id="subTotal"><b>$160.00</b></p>
+                        </span>
+                        <span class="subtotal">
+                            <p><b>Total</b></p><p id="Total"><b>$160.00</b></p>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+            <div class="row1" id="search">
+                <h2>Looking for Something?, Search here</h2>
+                <input type="search" placeholder="Type to search" class="search">
+                <input type="button" value="Search">
+            </div>
+            <div class="row2">
+                <h3>Download our App</h3>
+                <p>Get it for Andriod and Ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="eimages/play-store.png">
+                    <img src="eimages/app-store.png">
+                </div>
+            </div>
+            <div class="row3">
+                <p>Copyright 2024 - AiBrown</p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="viewpage" id="viewPage">
+            <div class="viewpagerow">
+                <div class="column2">
+                    <img src="eimages/product-9.jpg" id="img">
+                </div>
+                <div class="column2">
+                    <h2 id="name">Shoes Reebok Zig Kinetica 3</h2>
+                    <span>42 reviews</span>
+                    <h1 id="price">$199.00</h1>
+                    <button>Add to Cart</button>
+                    <button onclick="closefunction()">Continue shopping</button>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
